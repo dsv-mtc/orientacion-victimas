@@ -294,7 +294,7 @@ export default function App() {
             >
               <div className="bg-red-800 p-4 rounded-3xl shadow-2xl">
                 <img
-                  src="assest/plataformaRVVST.png"
+                  src="/plataformaRVVST.png"
                   alt="Plataforma Web"
                   className="rounded-2xl w-full shadow-inner"
                   referrerPolicy="no-referrer"
