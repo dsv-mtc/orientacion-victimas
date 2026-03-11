@@ -52,19 +52,19 @@ export default function App() {
     {
       step: "Paso 1",
       title: "Realiza la Denuncia",
-      image: "https://picsum.photos/seed/denuncia/600/400",
+      image: "/Gemini_Generated_Image_a4040ra4040ra404.png",
       description: "Acude a la comisaría más cercana para reportar el siniestro de tránsito."
     },
     {
       step: "Paso 2",
       title: "Registra tus datos",
-      image: "https://picsum.photos/seed/registro/600/400",
+      image: "/plataformaRVVST.png",
       description: "Ingresa tu información en nuestro sistema de registro voluntario."
     },
     {
       step: "Paso 3",
       title: "Seguimiento de caso",
-      image: "https://picsum.photos/seed/seguimiento/600/400",
+      image: "/Gemini_Generated_Image_rd0l92rd0l92rd0l.png",
       description: "Consulta el estado de tu orientación y los avances de tu solicitud."
     }
   ];
@@ -75,13 +75,9 @@ export default function App() {
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
-                <ShieldCheck className="text-white w-6 h-6" />
-              </div>
-              <span className="font-bold text-xl tracking-tight text-red-900 hidden sm:block">
-                SOVOT
-              </span>
+            <div className="flex items-center gap-6">
+              <img src="/logo-mtc.png" alt="Ministerio de Transportes y Comunicaciones" className="h-10 md:h-12 object-contain" />
+              <img src="/LOGO-ONSV.png" alt="Observatorio Nacional de Seguridad Vial" className="h-10 md:h-12 object-contain" />
             </div>
 
             {/* Desktop Nav */}
@@ -167,7 +163,7 @@ export default function App() {
             >
               <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                 <img
-                  src="https://picsum.photos/seed/peru-support/1200/800"
+                  src="/image-(6).png"
                   alt="Apoyo a víctimas"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -249,11 +245,11 @@ export default function App() {
                   />
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="flex-shrink-0 w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#d32f2f] text-white rounded-full flex items-center justify-center font-bold">
                     {index + 1}
                   </span>
                   <div>
-                    <h3 className="text-xl font-bold text-red-900">{step.title}</h3>
+                    <h3 className="text-xl font-bold text-[#8b0000]">{step.title}</h3>
                     <p className="mt-2 text-slate-600">{step.description}</p>
                   </div>
                 </div>
@@ -371,14 +367,14 @@ export default function App() {
               </div>
             </motion.div>
             
-            <div className="mt-12 lg:mt-0 grid grid-cols-2 gap-4">
-              <div className="space-y-4 pt-8">
-                <img src="https://picsum.photos/seed/soat1/400/500" className="rounded-2xl shadow-lg w-full object-cover h-64" alt="Fondo SOAT" />
-                <img src="https://picsum.photos/seed/soat2/400/300" className="rounded-2xl shadow-lg w-full object-cover h-48" alt="Fondo SOAT" />
+            <div className="mt-12 lg:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <img src="/fondo soat web-01.png" className="w-full h-auto rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Paso 1" />
+                <img src="/fondo soat web-02.png" className="w-full h-auto rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Paso 2" />
               </div>
               <div className="space-y-4">
-                <img src="https://picsum.photos/seed/soat3/400/300" className="rounded-2xl shadow-lg w-full object-cover h-48" alt="Fondo SOAT" />
-                <img src="https://picsum.photos/seed/soat4/400/500" className="rounded-2xl shadow-lg w-full object-cover h-64" alt="Fondo SOAT" />
+                <img src="/fondo soat web-03.png" className="w-full h-auto rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Paso 3" />
+                <img src="/fondo soat web-04.png" className="w-full h-auto rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Paso 4" />
               </div>
             </div>
           </div>
